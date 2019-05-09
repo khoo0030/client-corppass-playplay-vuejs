@@ -1,22 +1,14 @@
 <template>
-  <div class="home">
-    <button @click="login">Login to Corp Pass</button>
+  <div>
+    <button @click="login">Go to MockPass</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import axios from 'axios'
-
 export default {
   methods: {
-    async login () {
-      try {
-        const response = await axios.get('http://localhost:7002')
-        console.log(response)
-      } catch (e) {
-        console.error(e)
-      }
+    login () {
+      location.replace('http://localhost:7002/corppass-login')
     }
   }
 }
