@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Authenticate from './views/Authenticate.vue'
+import Landing from './views/Landing.vue'
 
 Vue.use(Router)
 
@@ -11,13 +11,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'Landing',
+      component: Landing
     },
     {
-      path: '/authenticate',
-      name: 'authenticate',
-      component: Authenticate
+      path: '/home',
+      name: 'home',
+      component: Home
     }
   ]
 })

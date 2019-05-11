@@ -1,15 +1,6 @@
 <template>
   <div>
-    <button @click="login">Go to MockPass</button>
+    <h1>Home page</h1>
+    <p>This page after MockPass authentication is successful</p>
   </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    login () {
-      location.replace('http://localhost:7002/corppass-login')
-    }
-  }
-}
-</script>
