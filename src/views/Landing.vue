@@ -8,7 +8,7 @@
 export default {
   methods: {
     login () {
-      location.replace('http://localhost:7002/corppass-login')
+      location.replace(`${process.env.VUE_APP_SERVICE_PROVIDER_URL}/corppass-login`)
     }
   }
 }
